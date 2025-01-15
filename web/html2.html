@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+    <meta charset="UTF-8">
+       <title>register</title>
+       <link rel="stylesheet" href="./assets/h2.css">
+       <script type="text/javascript" src="./Js/point.js"></script>
+ </head>
+
+ <body>
+
+ <video autoplay muted loop playsinline id="bgVideo">
+            <source src="./video/ys_video.mp4" type="video/mp4">
+            </video>
+
+     <div id="loginDiv">
+         <form action="">
+             <h1>注册</h1>
+
+             <center>
+             <button type="button" class="button" onclick="goToRegister()">返回登录界面</button>
+             </center>
+
+
+            <p>用户账号:<input id="userNname" type="text" autofocus required><label id="name_trip"></label></p>
+
+             <p>用户密码:<input id="password" type="password" required><label id="password_trip"></label></p>
+
+
+
+             <p style="text-align: center;">
+                 <input type="submit" class="button"  onclick="register()" value="提交">
+                 <input type="reset" class="button" value="重置">
+
+             </p>
+         </form>
+     </div>
+ <script src="./Js/h2.js"></script>
+ </body>
+<script>
+    clickEffect()
+</script>
+
+
+</html>
+
+
