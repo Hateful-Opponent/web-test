@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<body>
+    <center>
+        <p id="1"><table border="1"cellspacing="0"><tr>
+        <th width="150px">学号</th>
+        <th width="150px">姓名</th>
+        <th width="250px">实验题目</th></tr><tr>
+        <tr><td><center>202212904138</center></td>
+        <td><center>尧建飞</center></td>
+        <td><center>基于Javascript制作一个抽奖网页</center></td></tr>
+        </table></center>
+    </body>
+
+ <style type="text/css">
+        #box
+        {
+         width: 1200px;
+        height: 1650px;
+        border: 1px solid;
+        align-content: center;
+        padding: 70px;
+        margin: 0 auto;
+        overflow: auto;
+        text-align: center;
+        background-image: image-set("../card.jpg");
+        }
+
+        #bar-round
+        {
+            height: 70px;
+            width: 400px;
+            border: 1px solid blue;
+            border-radius: 90px;
+            text-align: center;
+
+        }
+
+        .wheel {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .wheel-item {
+            padding: 10px;
+            border-radius: 40px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #butt
+        {
+            position: relative;
+            bottom: 0;
+            background-color: white;
+            color: blue;
+            padding: 7px 16px;
+            text-align: center;
+            text-decoration: yellow;
+            display: inline-block;
+            font-size: 32px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #output
+        {
+            position: relative;
+            font-size: 32px;
+            color: red;
+        }
+
+    </style>
+
+    <center>
+    <audio width="320" height="120" controls="controls"><source src="../One more night.mp3"/></audio>
+    </center>
+
+    <div id="box">
+        <center>
+        <div id="bar-round"><font size="12" color="purple">了解你的捍卫者</font> </div>
+        </center>
+
+        <div id="wheel" class="wheel">
+
+                <div class="wheel-item" data-t="1"><img src="https://patchwiki.biligame.com/images/apex/thumb/d/d5/aokp2yqsp3wei4qwrzqxivsp5gl2y4y.png/460px-动力小子图鉴.png" width="180" height="300" ><br>动力小子</div>
+                <div class="wheel-item" data-t="2"><img src="https://patchwiki.biligame.com/images/apex/1/14/5pkmqmvgsjg17j1cymtf9xgp0xyhrl7.png" width="180" height="300" ><br>地平线</div>
+                <div class="wheel-item" data-t="3"><img src="https://patchwiki.biligame.com/images/apex/thumb/5/57/ooh0l7yh90sc47m2xjlmiuemh3x3733.png/345px-疯玛吉图鉴.png" width="180" height="300" ><br>疯马吉</div>
+                <div class="wheel-item" data-t="4"><img src="https://img.clinicmed.net/uploadimg/image/20200921/16006578995f6819ebe7b911.21844655.png" width="180" height="300" ><br>行秋</div>
+                <div class="wheel-item" data-t="5"><img src="https://upload-bbs.mihoyo.com/upload/2021/01/27/185747219/b671530a292db9cb374a1c98a0c0aacd_3426672943089895358.jpg?x-oss-process=image/resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg" width="180" height="300" ><br>刻晴</div>
+                <div class="wheel-item" data-t="6"><img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.uEP6wvCY_sRvqGjogI8LHwHaSw?rs=1&pid=ImgDetMain" width="180" height="300" ><br>甘雨</div>
+                <div class="wheel-item" data-t="7"><img src="https://ts1.cn.mm.bing.net/th/id/R-C.98251b4169cb29e34a722a38bfbf7ca6?rik=sGqHs4qXJ7YdTA&riu=http%3a%2f%2fpic.baike.soso.com%2fp%2f20131220%2f20131220132037-1593879537.jpg&ehk=fi7zESr1p9lzw7gnSXjcSf5mjUcsTkdJPkahW5MBuEw%3d&risl=&pid=ImgRaw&r=0" width="180" height="300" ><br>急先锋</div>
+                <div class="wheel-item" data-t="8"><img src="https://ts1.cn.mm.bing.net/th/id/R-C.14b7d7cb6be0430d9ada3e4f8c68f962?rik=fU637Saq1p%2bMMQ&riu=http%3a%2f%2fpic.baike.soso.com%2fp%2f20130702%2f20130702141253-1427704718.jpg&ehk=R6MNUpLEhDMV4%2fywTmsTTOY8LE0EaClBIjAKfeUhzxw%3d&risl=&pid=ImgRaw&r=0" width="180" height="300" ><br>猛虎王</div>
+                <div class="wheel-item" data-t="9"><img src="https://pic.baike.soso.com/ugc/baikepic2/52916/20170205195109-1615662127.jpg/300" width="180" height="300" ><br>龙卷风</div>
+            </div>
+
+        <script src="Ra.js"></script>
+
+        <img id="outimg" src="" width="180" height="180">
+
+
+        <p id="output"><b></b></p>
+
+        <button id="butt" onclick="ra()">选择你的捍卫者</button>
+
+
+    </div>
+
+
+</body>
+</html>
